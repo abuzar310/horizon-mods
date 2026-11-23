@@ -88,8 +88,8 @@ entry, and every later version must be signed with it, so nobody else can publis
 
 ## Staging by hand
 
-A file linked somewhere `stage` doesn't take (not a GitHub release download, or more than 3 files) is staged by a
-maintainer, as is any file once `staging` holds 900 (a release takes 1000; `cleanup.yml` makes room). From a checkout of main they trust, signed in to `gh` as a maintainer, they run
+A file `stage` doesn't take (a GitHub release download linked outside the pull request's description, or more than 3
+files) is staged by a maintainer, as is any file once `staging` holds 900 (a release takes 1000; `cleanup.yml` makes room). From a checkout of main they trust, signed in to `gh` as a maintainer, they run
 `scripts/stage.sh <pull request> <base sha> <head sha> <link>` with the head they reviewed and
 `git merge-base origin/main <head sha>`. To have both commits without checking the pull request out, first run
 `git fetch origin main refs/pull/<pull request>/head`. The script reads the pull request as data and runs none of its
@@ -114,7 +114,7 @@ why.
 | `.github/workflows/check.yml` | A pull request's checks |
 | `.github/workflows/owner-update.yml` | After the check: merges an owner's update of a resource, shader or data pack |
 | `.github/workflows/publish.yml` | On merge: releases, then `index.json` on Pages |
-| `.github/workflows/cleanup.yml` | Weekly: staging files nobody needs any more |
+| `.github/workflows/cleanup.yml` | Daily: staging files nobody needs any more |
 | `.github/workflows/checker.yml` | When the pin changes: builds the checker once, attested, as release `checker@<rev>` |
 | `archive/native-v1/mods/` | Frozen original native-project histories, including earlier `.hmod` releases, and their dependent modpack; never installed or validated as current packages |
 | `archive/api-0.1/mods/` | Frozen shader API 0.1 packs and content mods with pre-SDK manifests, whole projects with no version the current tool reads; same rules as native-v1 |
