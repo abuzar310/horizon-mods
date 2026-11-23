@@ -20,17 +20,17 @@ categories = ["utility"]
 tags = ["homestead", "port"]
 
 [[versions]]
-version = "0.4.2"
-published = "2026-11-22"
-game = "26.3"
-file = "universalgraves.hmod"
-sha256 = "ed8524faf0a5e086acc58b837779ff09e7bffd3bad578c6a4df8b28182b6f84e"
-changelog = "0.4.2: a new grave never takes the block of an older grave that hasn't spilled yet, a removed grave is noticed in every dimension a player is in, and trinkets that can't be taken off stay worn."
-
-[[versions]]
 version = "0.4.3"
 published = "2026-11-22"
 game = "26.3"
 file = "universalgraves.hmod"
 sha256 = "25efc8680849d39694c86846d2bcd1d140d65455da8d2832ebf3e741330c0b0b"
 changelog = "0.4.3: the body and saddle slots go into the grave too and come back to those slots when the owner opens it (into the inventory if the slot is taken), and the listing names what an explosion or a piston does to a grave."
+
+[[versions]]
+version = "0.4.2"
+published = "2026-11-22"
+game = "26.3"
+file = "universalgraves.hmod"
+sha256 = "ed8524faf0a5e086acc58b837779ff09e7bffd3bad578c6a4df8b28182b6f84e"
+changelog = "0.4.2: a new grave never takes the block of an older grave that hasn't spilled yet, a removed grave is noticed in every dimension a player is in, and trinkets that can't be taken off stay worn."

@@ -35,17 +35,17 @@ sha256 = "6016c99d846c2852d19bb3cd4be75e4d168bbf556907bd4c20f2c1ac158237b5"
 changelog = "First version. Pinned to Nightly 2026-11-20 (0a875da); needs a launcher with horizon-rust/horizon#18789."
 
 [[versions]]
-version = "0.2.2"
-published = "2026-11-22"
-game = "26.3"
-file = "more_chat_history-0.2.2.hmod"
-sha256 = "5b713906b306210a93862941e984d292af0b173621b60120bea3a6a1db8474ee"
-changelog = "Keeps the chat between sessions in chat_history.log, shown under a divider; keeps 1000 saved commands instead of 50. Renamed to Chat Memory and History (same id). Pinned to Nightly 2026-11-20 (0a875da); needs launcher 0.2.89 or later."
-
-[[versions]]
 version = "0.3.0"
 published = "2026-11-22"
 game = "26.3"
 file = "more_chat_history-0.3.0.hmod"
 sha256 = "4d60de76faf6bdf3df45c3fc791a3991ea77702857b3015fc2007e141533410c"
 changelog = "chat_memory.properties: save_history=false turns the saved history off, max_file_mib caps chat_history.log (default 4, only its tail is read, cut while a session runs). Pinned to Nightly 2026-11-20 (0a875da); needs launcher 0.2.89 or later."
+
+[[versions]]
+version = "0.2.2"
+published = "2026-11-22"
+game = "26.3"
+file = "more_chat_history-0.2.2.hmod"
+sha256 = "5b713906b306210a93862941e984d292af0b173621b60120bea3a6a1db8474ee"
+changelog = "Keeps the chat between sessions in chat_history.log, shown under a divider; keeps 1000 saved commands instead of 50. Renamed to Chat Memory and History (same id). Pinned to Nightly 2026-11-20 (0a875da); needs launcher 0.2.89 or later."
